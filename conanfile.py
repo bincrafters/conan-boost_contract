@@ -28,5 +28,8 @@ class BoostContractConan(base.BoostBaseConan):
         "boost_typeof",
         "boost_utility"
     ]
+    b2_build_requires = [
+        "boost_system"
+    ]
 
 
