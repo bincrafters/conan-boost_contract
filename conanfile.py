@@ -4,7 +4,7 @@
 from conans import python_requires
 
 
-base = python_requires("boost_base/1.67.0@bincrafters/testing")
+base = python_requires("boost_base/1.68.0@bincrafters/testing")
 
 class BoostContractConan(base.BoostBaseConan):
     name = "boost_contract"
@@ -28,8 +28,4 @@ class BoostContractConan(base.BoostBaseConan):
         "boost_typeof",
         "boost_utility"
     ]
-    b2_build_requires = [
-        "boost_system"
-    ]
-
-
+    b2_build_requires = ["boost_system"]
