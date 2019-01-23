@@ -8,6 +8,7 @@ base = python_requires("boost_base/1.67.0@bincrafters/testing")
 
 class BoostContractConan(base.BoostBaseConan):
     name = "boost_contract"
+    version = "1.67.0"
     url = "https://github.com/bincrafters/conan-boost_contract"
     lib_short_names = ["contract"]
     b2_requires = [
